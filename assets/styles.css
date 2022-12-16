@@ -1,0 +1,355 @@
+
+* {
+    box-sizing: border-box;
+}
+/* root for portfolio color variables */
+
+:root{
+    --MP-background-color: white; 
+    --nav-color: rgb(143, 151, 186);
+    --banner-color: rgb(209, 157, 93);
+    --nav-background-color: rgb(51, 51, 195); 
+    --MP-text: rgba(7, 7, 170, 0.753);
+    --MP-banner-2nd: rgb(104, 81, 161);
+    --MP-banner-text: orange ; 
+    --MP-text-2nd: rgb(219, 145, 47); 
+    --MP-text-box: black;
+    --MP-text-box2: rgb(222, 235, 47);
+    --Prj-text-color: rgb(219, 155, 81); 
+ 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(black);
+    background-color: white;
+    line-height: 1.5;
+}
+/* text spacing */
+h1,h2,h3{
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+/* navigation bar for portfolio */
+header {
+    padding: 15px 6% 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--nav-background-color); 
+    background-image: linear-gradient(270deg, var(--MP-banner-2nd)0%,var(--MP-background-color)100%);
+    box-shadow: 0 10px 35px var(--nav-color);
+}
+
+header h1 {
+    color: rgb(52, 51, 61);
+    background-color: var(--MP-background-color) ;
+    background-image: linear-gradient(270deg, var(--MP-banner-2nd)0%,var(--MP-background-color)40%);
+    padding: 5px 2% 5px 6%;
+    margin: 0;
+    font-size: 4vw;
+    line-height: 1.5;
+}
+header h1 :hover {
+    background-size: 100% 100%;
+    color: var(--MP-text-box2);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+nav a {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: var(--MP-text-2nd);
+    margin-right: 10px;
+    background-image: linear-gradient(270deg, var(--MP-text-2nd)0%,var(--MP-text-2nd)100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: bottom;
+    transition: all 0.25s ease-in;
+    font-size: 1.4rem
+
+}
+nav a:hover {
+    background-size: 100% 100%;
+    color: var(--MP-text-box2);
+
+}
+
+main {
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+/* banner*/
+.banner {
+
+    background-image:url(Images/sunsetPortImg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    min-height: 25vh;
+    color: var(--MP-background-color);
+    padding: 2% 6%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+
+}
+.banner div {
+    background-color: var(--MP-text);
+    padding: auto;
+    flex: auto 0 100%;
+}
+.banner h2 {
+    color: var(--Prj-text-color);
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 2.3rem;
+    line-height: 1.2;
+    display: inline;
+
+}
+.Profile-pic {
+    margin-left: 40%;
+    min-height: 300px;
+    min-width: 300px;
+}
+.main-page {
+    max-width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+} 
+/* about me */
+.Bio {
+    margin: 25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.Bio h2 {
+    flex: 0 0 20%;
+    text-align: left;
+    padding-right: 10px;
+    border-bottom: 4px  solid var(--MP-text);
+    font-size: 3.5vw;
+    line-height: 1.1;
+}
+.Bio div {
+    flex: 0 0 77%;
+}
+.Bio p {
+    margin-bottom: 15px;
+}
+/* Container for contacts, and projects*/
+.portfolio-selection {
+margin: 25px 0;
+padding: 10px 0;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+align-items: stretch;
+justify-content: space-between;
+}
+
+.portfolio-selection h2{
+    flex: 0 0 20%;
+    text-align: left;
+    padding-right: 10px;
+    border-bottom: 4px  solid var(--MP-text);
+    font-size: 4vw;
+    line-height: 1.1;
+
+}
+
+.portfolio-selection div {
+    flex: 0 0 77%;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+/* Parameters for flex boxes containing projects */
+.project-box {
+    border: 4px solid var(--MP-text-box);
+    background-color: var(--MP-background-color 80%);
+    color: var(--MP-text);
+    background-repeat: no-repeat;
+    min-height: 150px;
+    max-height: 150px;
+    flex-basis: 15%;
+    display : flex;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    margin: 0.5em;
+    margin-right: 5em;
+    text-decoration: none;
+    background-size: 100%;
+    transition: all 0.5s;
+    font-size: 0.9rem;
+}
+
+.project-box:first-child {
+    min-height: 350px;
+    flex-basis: 100%;
+    
+    
+} 
+.project-box:hover {
+    background-color: var(--MP-text-box);
+}
+
+.project-box div {
+    background-color: var(--MP-text);
+    padding: auto;
+}
+
+.project-box h3 {
+    font-size: 2rem;
+    color: var(--Prj-text-color);
+}
+.project-box span {
+    color: var(--Prj-text-color);
+}
+
+/* Project Mock-up images */
+.project-main {
+    background-image: url(Images/filmProduction.jpg);
+    background-size: cover;
+}
+.project-1 {
+    background-image: url(Images/videoedditing.png);
+    background-size: cover;
+}
+.project-2 {
+    background-image: url(Images/audioEditing.png);
+    background-size: cover;
+}
+.project-3 {
+    background-image: url(Images/Ccorrecction.jpeg);
+    background-size: cover;
+}
+.project-4 {
+    background-image: url(Images/maxresdefault.jpg);
+    background-size: cover;
+}
+
+.contact address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+
+}
+
+.contact address a {
+    color: var(--MP-text);
+    padding: 5px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-style: normal;
+    background-image: linear-gradient(270deg , var(--MP-text) 0%, var(--MP-text)100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: bottom;
+    transition: all 0.25s ease-in;
+    margin: 0 0rem 0.6rem;
+    display: inline-block;
+}
+
+.contact address a:hover {
+    background-size: 100% 88%;
+    color: var(--MP-text-2nd);
+}
+
+@media screen  and (max-width: 992px) {
+    header {
+        padding: 0 0 10px 0;
+        justify-content: center;
+        text-align: center;
+    }
+    header h1 {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        font-size: 10vw;
+    
+    }
+    header nav{
+        justify-content: center;
+    }
+    .Bio h2, .Bio div, .portfolio-selection h2, .portfolio-selection div {
+       flex: 0 0 100%;
+
+    }
+    .Bio h2, .portfolio-selection h2{
+        border-right: none;
+        border-bottom: 4px solid var(--MP-text-box);  
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        text-align: left;
+        font-size: 7vw;
+    }
+
+
+}
+@media screen  and (max-width: 768px) {
+    .project-box{
+        flex-basis: 75%;
+    }
+    .project-box:first-child{
+        flex-basis: 150%;
+    }
+    .project-box:first-child {
+        min-height: 150px;
+    }
+    .banner {
+        justify-content: center;
+        text-align: center;
+    }
+    .contact address {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+/* @media screen  and (max-width: 600px) {
+    .project-box, .project-box:first-child {
+        flex-basis: 100%;
+    }
+    .project-box:first-child {
+        min-height: 150px;
+    }
+    .banner {
+        justify-content: center;
+        text-align: center;
+    }
+    .contact address {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+} */
+
+
+
+
+

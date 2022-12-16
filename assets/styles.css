@@ -1,4 +1,4 @@
-
+/* reccommended standardization from w3schools */
 * {
     box-sizing: border-box;
 }
@@ -61,7 +61,7 @@ header h1 :hover {
     background-size: 100% 100%;
     color: var(--MP-text-box2);
 }
-
+/* Nav bar elements */
 nav {
     display: flex;
     flex-direction: row;
@@ -282,7 +282,7 @@ justify-content: space-between;
     background-size: 100% 88%;
     color: var(--MP-text-2nd);
 }
-
+/* small screen */
 @media screen  and (max-width: 992px) {
     header {
         padding: 0 0 10px 0;
@@ -316,6 +316,7 @@ justify-content: space-between;
 
 
 }
+/* Tablet */
 @media screen  and (max-width: 768px) {
     .Profile-pic{
         margin-left: 20%;
@@ -342,5 +343,31 @@ justify-content: space-between;
     }
 }
 
+/* Mobile */
+@media screen  and (max-width: 600px) {
+    .Profile-pic{
+        margin-left: 20%;
+    }
+    .project-box{
+        flex-basis: 65%;
+    }
+    .project-box:first-child{
+        flex-basis: 150%;
+    }
+    .project-box:first-child {
+        min-height: 150px;
+    }
+    .banner {
+        justify-content: center;
+        text-align: center;
+    }
+    .contact address {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .Bio div {
+        font-size: 3vw;
+    }
+}
 
 

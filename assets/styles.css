@@ -314,7 +314,7 @@ justify-content: space-between;
 }
 @media screen  and (max-width: 768px) {
     .project-box{
-        flex-basis: 75%;
+        flex-basis: 65%;
     }
     .project-box:first-child{
         flex-basis: 150%;
